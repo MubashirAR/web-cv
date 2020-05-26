@@ -1,0 +1,195 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url(./assets/img/bg.png);
+  /* background-size: contain; */
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pad-left {
+  padding-left: 1rem;
+}
+.pad-right {
+  padding-left: 1rem;
+}
+h1 {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+h2 {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+h4 {
+  font-weight: 100;
+}
+.profile-description {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.job-title {
+  display: inline-block;
+}
+.job-title::before {
+  content: '';
+  width: 210px;
+  position: absolute;
+  border-bottom: 3px solid red;
+  padding-top: 30px;
+}
+.name {
+  width: 100%;
+}
+.i-am {
+  width: 100%;
+}
+
+.cv {
+  z-index: 2;
+  position: fixed;
+  display: none;
+  width: 100%;
+  /* height: 100%; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-y:scroll;
+  overflow-x:hidden;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+.cv-container {
+  display: flex;
+}
+#list-example {
+  width: 40%;
+}
+.cv h1,.cv h2, .cv h3 {
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+}
+.cv h1, .cv h2 {
+  color: #fff;
+}
+.job-item {
+  border-left: 1px solid red;
+  margin-right: 1rem;
+}
+.cv h1::before {
+  content: '';
+  border: 2px solid red;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.cv h2::before {
+  content: '';
+  border: 2px solid red;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.time-period {
+  background-color: #333;
+  display: inline;
+  padding: .5rem;
+  margin-bottom: 0.2rem;
+}
+.responsibilities {
+  margin-top: 2rem;
+  display: block;
+}
+.company-details {
+  display: inline;
+  margin-left: 0.2rem;
+  font-style: italic;
+}
+.cv ul .cv li {
+  line-height: 1.5rem;
+}
+.summary .text {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-style: italic;
+}
+.section-50 {
+  width: 50%;
+  padding: 1rem;
+}
+
+.tabs {
+  display: flex;
+}
+.tabs h4 {
+  margin-right: 1rem;
+  padding-bottom: 2px;
+}
+.tabs h4.active {
+  padding-bottom: 0;
+  border-bottom: 2px solid red;
+}
+.tabs h4:hover {
+  cursor: pointer;
+  padding-bottom: 0;
+  border-bottom: 2px solid red;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.web-only {
+  display: flex;
+}
+.mobile-only {
+  display: none;
+}
+@media(orientation: portrait) {
+  .profile-description {
+    width: 90%;
+    font-size: 0.6rem;
+  }
+  .job-title::before {
+    width: 200px;
+    padding-top: 30px;
+  }
+  .cv {
+    padding-left: unset;
+  }
+  .cv-container {
+    flex-direction: column;
+    padding-right: 1rem;
+    max-width: 87%;
+  }
+  .section-50 {
+    width: 100%;
+  }
+  .web-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .tabs h4 {
+    font-size: 1rem;
+  }
+}

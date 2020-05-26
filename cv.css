@@ -1,0 +1,57 @@
+html,
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  color: #aaa;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+#list-example {
+  width: 40%;
+}
+h1, h2, h3 {
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+}
+h1, h2 {
+  color: #fff;
+}
+.job-item {
+  border-left: 1px solid red;
+  margin-right: 1rem;
+}
+h1::before {
+  content: '';
+  border: 2px solid red;
+  height: 2rem;
+  margin-right: 1rem;
+}
+h2::before {
+  content: '';
+  border: 2px solid red;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.time-period {
+  background-color: #333;
+  display: inline;
+  padding: .5rem;
+  margin-bottom: 0.2rem;
+}
+.responsibilities {
+  margin-top: 2rem;
+  display: block;
+}
+.company-details {
+  display: inline;
+  margin-left: 0.2rem;
+  font-style: italic;
+}
+ul li {
+  line-height: 1.5rem;
+}
+.summary i {
+  margin-left: 1rem;
+}
